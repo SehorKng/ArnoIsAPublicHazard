@@ -3,27 +3,29 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="robots" content="noindex">
     <title>Under Maintenance</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
             background: #111827;
             color: white;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
+            min-height: 100dvh; /* real visible height on phones */
             margin: 0;
             text-align: center;
         }
 
         .container {
-            padding: 30px;
+            padding: 30px 20px;
         }
 
         h1 {
-            font-size: 40px;
+            font-size: clamp(1.8rem, 8vw, 2.5rem);
             color: #60a5fa;
         }
 
